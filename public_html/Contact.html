@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Contact</title>
+        <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="mycss/style.css" rel="stylesheet">
+
+    </head>
+   <body>
+        <nav style="background:rgba(0, 0, 0, 0.3); height:auto; padding: 10px;" class="navbar navbar-fixed-top">
+           <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#my-menu" style="background-color: #ffffff">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="img/LOGO/well-food.jpg" style="height: 50px;width: 100px; margin-top: -15px; "></a>
+                </div>
+                <div class="collapse navbar-collapse" id="my-menu">
+
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        
+                        <li><a href="About.html" class="dropdown-toggle" data-toggle="dropdown">About<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="About.html">About</a></li>
+                                <li><a href="#">Gallery-2</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right" >
+                        <li><p class="navbar-text">Already have an account?</p></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
+                            
+                            
+                            <ul id="login-dp" class="dropdown-menu">
+                                <li>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            Login via
+                                            <div class="social-buttons">
+                                                <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+                                                <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+                                            </div>
+                                            or
+                                            <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                                                <div class="form-group">
+                                                    <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                                                    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="sr-only" for="exampleInputPassword2">Password</label>
+                                                    <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                                                    <div class="help-block text-right"><a href="">Forget the password ?</a></div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> keep me logged-in
+                                                    </label>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="bottom text-center">
+                                            New here ? <a href="#"><b>Join Us</b></a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#singup" data-toggle="modal"><i class="fa fa-sign-out"></i>&nbsp; Sing Up</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+       </nav>
+       
+       <div class="modal fade" id="singup" role="dialog">
+          <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title text-info">Sing Up Form</h4>
+                  </div>
+                  <div class="modal-body">
+                      <h4 class="text-center text-primary">Please Input your information </h4>
+                      <hr/>
+                      <form rol="form" class="form-horizontal" action="" method="post">
+                          <div class="form-group">
+                              <label class="control-label col-md-3">First Name</label>
+                              <div class="col-md-9">
+                                  <input type="Text" name="first_name" class="form-control" placeholder="Enter your First Name">
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label class="control-label col-md-3">Last Name</label>
+                              <div class="col-md-9">
+                                  <input type="text" name="last_name" class="form-control" placeholder="Enter your Last Name">
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label class="control-label col-md-3">Date of Birth</label>
+                              <div class="col-md-9">
+                                  <input type="datetime-local" name="Date_of_birth" class="form-control">
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label class="control-label col-md-3">Email Address</label>
+                              <div class="col-md-9">
+                                  <input type="email" name="email_address" class="form-control" placeholder="Enter your Email" required="">
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label class="control-label col-md-3">Password</label>
+                              <div class="col-md-9">
+                                  <input type="Password" name="Password" class="form-control" placeholder="Enter your Password" required="">
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label class="control-label col-md-3">Address</label>
+                              <div class="col-md-9">
+                                  <textarea class="form-control" name="address" placeholder="Address"></textarea>
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label class="control-label col-md-3">Phone Number</label>
+                              <div class="col-md-9">
+                                  <input type="number" name="phone_nember" class="form-control" placeholder="Enter your Phone Number" required="">
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <div class=" col-md-offset-3 col-md-9 checkbox">
+                                  <label><input type="radio" name="remeber" value="remeber">Male</label>
+                                  <label><input type="radio" name="remeber" value="remeber">Female</label>
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label class="control-label col-md-3">Image</label>
+                              <div class="col-md-9">
+                                  <input type="file" name="image" class="form-control" >
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label class="control-label col-md-3">City</label>
+                              <div class="col-md-9">
+                                  <input type="text" name="city" class="form-control"  >
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label class="control-label col-md-3">Country</label>
+                              <div class="col-md-9">
+                                  <select class="form-control">
+                                      
+                                  </select>
+                              </div>
+                          </div>
+                          
+                          
+                          <div class="form-group">
+                              <div class=" col-md-offset-3 col-md-9 checkbox">
+                                  <label><input type="checkbox" name="remeber" value="remeber"> Remember Me</label>
+                              </div>
+                          </div>
+                      </form>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-success btn btn-lg">Sing Up</button>
+                  </div>
+              </div>
+
+          </div>
+      </div>
+      
+       <section class="well well__offset-3">
+           <div class="container">
+               <h2 style="padding-top:90px"><em>Our</em><br>Contacts</h2>
+               <div class="row">
+                   <div class="col-md-12">
+                       <small><i></i>Add alerts if form ok... success, else error.</i></small>
+                       <div class="alert alert-success"><strong><span class="glyphicon glyphicon-send"></span> Success! Message sent. (If form ok!)</strong></div>	  
+                       <div class="alert alert-danger"><span class="glyphicon glyphicon-alert"></span><strong> Error! Please check the inputs. (If form error!)</strong></div>
+                   </div>
+                   <form role="form" action="" method="post" >
+                       <div class="col-lg-6">
+                           <div class="well well-sm"><strong><i class="glyphicon glyphicon-ok form-control-feedback"></i> Required Field</strong></div>
+                           <div class="form-group">
+                               <label for="InputName">Your Name</label>
+                               <div class="input-group">
+                                   <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Enter Name" required>
+                                   <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+                           </div>
+                           <div class="form-group">
+                               <label for="InputEmail">Your Email</label>
+                               <div class="input-group">
+                                   <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Email" required  >
+                                   <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+                           </div>
+                           <div class="form-group">
+                               <label for="InputMessage">Message</label>
+                               <div class="input-group"
+                                    >
+                                   <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
+                                   <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+                           </div>
+                           <div class="form-group">
+                               <label for="InputReal">What is 4+3? (Simple Spam Checker)</label>
+                               <div class="input-group">
+                                   <input type="text" class="form-control" name="InputReal" id="InputReal" required>
+                                   <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+                           </div>
+                           <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right">
+                       </div>
+                   </form>
+                   <hr class="featurette-divider hidden-lg">
+                   <div class="col-lg-5 col-md-push-1">
+                       <address>
+                           <h3>Office Location</h3>
+                           <p class="lead"><a href="#">WELL FOOD<br>
+                                   Washington, DC 20301</a><br>
+                               Phone:+8801911097279<br>
+                               <a href="#">arif.hawlader@outlook.com</a></p>
+                       </address>
+                   </div>
+               </div>
+
+           </div>
+        </section>
+       
+       
+       
+       
+       <footer style="background-color: #823f3f;">
+           <div class="container" >
+               <div class="col-md-12 centered" style="margin-left: 180px;">
+                   <ul class="social-network social-circle">
+                       <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+                       <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                       <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                       <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                       <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                   </ul>				
+               </div>
+               <div class="copyright text-center"> © <span id="copyright-year">2016</span>
+                   <p>
+                       <a href="#" >Privacy Policy</a>
+                       
+                   </p>\
+               </div>
+           </div>
+       </footer>
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+       <script src="js/ank_jquery.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
